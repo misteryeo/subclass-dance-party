@@ -10,6 +10,8 @@ $(document).ready(function() {
      * will call the function to make the dancer.
      */
 
+
+
     /* dancerMakerFunctionName is a string which must match
      * one of the dancer maker functions available in global scope.
      * A new object of the given type will be created and added
@@ -27,7 +29,14 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+
+    $('.lineUp').on('click', function(event) {
+      window.dancers.forEach(function(dancer) {
+        dancer.lineUp();
+      });
+    });
 });
 
