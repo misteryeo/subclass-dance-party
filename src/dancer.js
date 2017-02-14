@@ -35,7 +35,7 @@ makeDancer.prototype.setPosition = function(top, left) {
 
 makeDancer.prototype.lineUp = function() {
   window.dancers.forEach(function(dancer) {
-    dancer.setPosition(top, 100);
+    dancer.setPosition(400);
   });
 
 };
