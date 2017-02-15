@@ -3,7 +3,7 @@
 var makeClouds = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node = $('<span class="cloud"></span>');
+  this.$node.addClass('cloud');
   this.timeBetweenSteps = 3000;
 };
 
