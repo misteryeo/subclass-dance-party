@@ -13,9 +13,8 @@ var makeFlipDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   // this.$node.attr('src', 'https://img.clipartfest.com/2957cf9c48cd3c166cc6cd13893bb9b0_storm-gif-images-transparent-cloud-clipart-gif_1000-500.gif');
   // console.log(this.$node);
-  this.$node = $('<span class="dancer"><img class="cloud" src="img/cloud.gif"></span>');
+  this.$node.addClass('.cloud');
 
-  $(this).css('overflow', 'visible');
   // var oldStep = this.step;
   // return blinkyDancer;
 };

@@ -53,12 +53,14 @@ body, a:link, a:visited, a:active{
   position: absolute;
   display: block;
   color: white;
+  content: url('http://i.giphy.com/l3q2KVexs6fFZErqo.gif');
 }
 
 .cloud {
   height: 200px;
   position: absolute;
-  overflow: auto !important;
+  overflow: visible;
+  content: url('img/cloud.gif');
 }
 
 .lineUp, .scatter{
