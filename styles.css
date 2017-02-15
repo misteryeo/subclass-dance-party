@@ -15,6 +15,16 @@ body{
 body, a:link, a:visited, a:active{
   color: white;
 }
+
+.danceCursor {
+  /*cursor: none;*/
+  height: 100%;
+}
+
+.shape {
+  width: 300px;
+}
+
 .title{
   color: lightblue;
   padding:0px 12px;
@@ -37,11 +47,13 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:20px solid red;
-  border-radius:5px;
-  position:absolute;
-  transform:rotate(90deg);
+
+.dancer {
+  margin: 50px 0;
+  position: absolute;
+  display: block;
+  color: white;
+
 }
 
 .lineUp, .scatter{
@@ -53,10 +65,10 @@ body, a:link, a:visited, a:active{
 }
 
 .change{
-  -ms-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  transition-duration: 10ms;
+  -ms-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+  transition-duration: 1ms;
 }
 
 @-webkit-keyframes backgroundGradient {
@@ -74,3 +86,4 @@ body, a:link, a:visited, a:active{
   50%{background-position:43% 100%}
   100%{background-position:58% 0%}
 }
+

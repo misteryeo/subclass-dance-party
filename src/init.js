@@ -1,6 +1,18 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  $('.lineUp').on('click', function() {
+    window.dancers.forEach(function(dancer) {
+      dancer.lineUp();
+    });
+  });
+
+  $('.scatter').on('click', function() {
+    window.dancers.forEach(function(dancer) {
+      dancer.scatter();
+    });
+  });
+
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -33,10 +45,15 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-    $('.lineUp').on('click', function(event) {
-      window.dancers.forEach(function(dancer) {
-        dancer.lineUp();
-      });
-    });
-});
 
+// Adds a cursor of your choice linked through the HTML file
+
+  $('.danceCursor').mousemove(function(e) {
+    var top = (e.clientY - 100 > 32) ? e.clientY - 100 : 32;
+    $('.shape').offset({
+      top: top,
+      left: e.clientX - 150
+    });
+  });
+
+});
