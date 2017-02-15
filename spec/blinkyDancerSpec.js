@@ -1,7 +1,7 @@
 describe('blinkyDancer', function() {
 
   var blinkyDancer, clock;
-  var timeBetweenSteps = 2000;
+  var timeBetweenSteps = 10000;
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
@@ -22,7 +22,7 @@ describe('blinkyDancer', function() {
     it('should call step at least once per second', function() {
       sinon.spy(blinkyDancer, 'step');
       expect(blinkyDancer.step.callCount).to.be.equal(0);
-      clock.tick(timeBetweenSteps); // ? It seems we added an extra tick already...
+      clock.tick(timeBetweenSteps); // Removed extra tick, but why?
       
       
       expect(blinkyDancer.step.callCount).to.be.equal(1);

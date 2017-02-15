@@ -17,7 +17,6 @@ body, a:link, a:visited, a:active{
 }
 
 .danceCursor {
-  /*cursor: none;*/
   height: 100%;
 }
 
@@ -53,13 +52,14 @@ body, a:link, a:visited, a:active{
   position: absolute;
   display: block;
   color: white;
-  content: url('http://i.giphy.com/l3q2KVexs6fFZErqo.gif');
+  content: url('img/star.gif');
 }
 
 .cloud {
-  height: 200px;
+  height: 150px;
   position: absolute;
   overflow: visible;
+  display: block;
   content: url('img/cloud.gif');
 }
 
@@ -75,7 +75,7 @@ body, a:link, a:visited, a:active{
   -ms-transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   transform: rotate(60deg);
-  transition-duration: 1ms;
+  transition-duration: 100ms;
 }
 
 @-webkit-keyframes backgroundGradient {
