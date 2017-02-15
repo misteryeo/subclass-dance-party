@@ -53,7 +53,12 @@ body, a:link, a:visited, a:active{
   position: absolute;
   display: block;
   color: white;
+}
 
+.cloud {
+  position: absolute;
+  height: 200px;
+  overflow: visible;
 }
 
 .lineUp, .scatter{

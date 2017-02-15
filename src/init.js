@@ -22,8 +22,6 @@ $(document).ready(function() {
      * will call the function to make the dancer.
      */
 
-
-
     /* dancerMakerFunctionName is a string which must match
      * one of the dancer maker functions available in global scope.
      * A new object of the given type will be created and added
@@ -46,8 +44,7 @@ $(document).ready(function() {
   });
 
 
-// Adds a cursor of your choice linked through the HTML file
-
+// Adds a cursor of your choice linked through the HTML
   $('.danceCursor').mousemove(function(e) {
     var top = (e.clientY - 100 > 32) ? e.clientY - 100 : 32;
     $('.shape').offset({

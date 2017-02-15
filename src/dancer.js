@@ -18,7 +18,6 @@ makeDancer.prototype.step = function() {
 };
 
 
-
 makeDancer.prototype.setPosition = function(top, left) {
     // Use css top and left properties to position our <span> tag
     // where it belongs on the page. See http://api.jquery.com/css/
@@ -38,6 +37,7 @@ makeDancer.prototype.lineUp = function() {
     var totalLeft = 0;
     var totalTop = 400;
     dancer.setPosition(totalTop);
+  });
 };
 
 makeDancer.prototype.scatter = function() {
@@ -45,7 +45,7 @@ makeDancer.prototype.scatter = function() {
   this.newLeft = $('body').width() * Math.random();
   makeDancer.prototype.move.call(this.$node, this.newTop, this.newLeft);
 };
-
+  
 makeDancer.prototype.move = function(top, left) {
   $(this).stop().animate({
     'top': top,
