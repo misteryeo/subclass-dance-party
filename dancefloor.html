@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kirby's Playground</title>
+    <title>Kirby's Dreamland</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
@@ -12,17 +12,19 @@
   <body>
 
 
+    <audio src="song/kirbysong.mp3" autoplay="autoplay" loop="loop"></audio>
+  
     <div class="topbar">
-      <span class="title">Kirby's Playground</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">Starry Skies</a>
+      <span class="title">Kirby's Dreamland</span>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyStars">Starry Skies</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeJumpDancer">Let's Jump!</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeFlipDancer">Cloudy Skies</a>    
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeClouds">Cloudy Skies</a>    
       <a href="#" class="lineUp" data-dancer-maker-function-name="makeFlipDancer">line em up!</a>
       <a href="#" class="scatter" data-dancer-maker-function-name="makeJumpDancer">scatter!</a>
     </div>
     
     <div class="danceCursor">
-      <img src="http://vignette4.wikia.nocookie.net/mugen/images/1/13/Kirby_Dance.gif/revision/latest?cb=20140125064641" class="shape" />
+      <img src="img/kirbydance.gif" class="shape" />
     </div>
     
     <script src="src/init.js"></script>
