@@ -13,13 +13,15 @@ $(document).ready(function() {
     });
   });
 
+  $('body').on('mouseover', '.dancer', function(event) {
+    $(this).slideToggle();
+  });
+  
   $('body').on('mouseenter', '.cloud', function() {
     $(this).fadeOut();
   }); 
 
-  $('body').on('mouseover', '.dancer', function(event) {
-    $(this).slideToggle();
-  });
+
 
   $('.addDancerButton').on('click', function(event) {
 
